@@ -34,7 +34,7 @@ Se você quiser rodar este projeto na sua máquina, siga os passos abaixo:
     ```bash
     cd portifolio
     ```
-3.  Instale todas ás dependências do React
+3. Instale ás dependências do React.js
    ```bash
    npm install
    ```
