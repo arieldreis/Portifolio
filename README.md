@@ -13,7 +13,7 @@ Este é o meu portfólio pessoal, onde eu apresento alguns dos meus projetos e h
 
 Você pode acessar o portfólio através do seguinte link:
 
-[Link do seu Portfólio Online](https://arieldreis.github.io/Portifolio/)
+[Link do seu Portfólio Online](https://arieldreis.github.io/Portifolio/README.md)
 
 ## Seções do Portfólio
 
