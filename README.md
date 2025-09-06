@@ -36,11 +36,11 @@ Se você quiser rodar este projeto na sua máquina, siga os passos abaixo:
     ```
 3.  Instale todas ás dependências do React
    ```bash
-    npm install
+   npm install
    ```
 4. Por último inicie o servidor
    ```bash
-     npm run dev
+   npm run dev
    ```
 ## Contato
 
