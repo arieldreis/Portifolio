@@ -1,4 +1,4 @@
-# Portifolio
+# Portifólio
 
 Este é o meu portfólio pessoal, onde eu apresento alguns dos meus projetos e habilidades. O objetivo é demonstrar meu trabalho como desenvolvedor web e servir como um ponto de contato para futuras oportunidades.
 
