@@ -32,15 +32,19 @@ const principal = () => {
         </section>
         <section className="skills">
           <h1>Habilidades e Tecnologias</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            </p>
+          <ul className='skills-list'>
+            <li> Desenvolvimento web front-end: HTML, CSS, JavaScript e React </li>
+            <li> Back-end e lógica de programação: Java, Python e NodeJs</li>
+            <li> Versionamento de código: Git e GitHub (controle de versões e colaboração em projetos)</li>
+            <li> Banco de dados: MySql (gerenciamento e consultas)</li>
+            <li> Experiência prática em integração de sistemas e desenvolvimento de projetos pessoais</li>
+          </ul>
+          <h2>Idiomas</h2>
+          <ul className="skills-list">
+            <li> Inglês: Intermediário-Avançado</li>
+            <li> Francês: Básico</li>
+            <li> Espanhol: Básico</li>
+          </ul>
         </section>
         <section className="education">
           <h1>Experiência e Educação</h1>

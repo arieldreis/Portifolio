@@ -150,7 +150,8 @@ body{
 /* Título */
 .container-main h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /* Texto do sobre mim */
@@ -174,10 +175,15 @@ body{
     height: 220px;
     border-radius: 10px;  
     object-fit: cover;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+    box-shadow: 0 6px 15px 10px rgba(0, 0, 0, 0.76);
     flex-shrink: 0;      /* impede a imagem de "espremer" */
+    animation: aparecerZoom 1.5s ease-in-out infinite;
 }
-
+@keyframes aparecerZoom{
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
 /* Responsividade do Sobre Mim*/
 @media (max-width: 850px) {
     .sameRow {
@@ -195,4 +201,13 @@ body{
         text-align: left;  
         text-indent: 0;    
     }
+}
+
+/*Technology and skills*/
+.skills-list{
+    padding: 5px;
+    list-style-type: none;
+}
+.skills-list > li::before{
+    content: "➔";
 }
