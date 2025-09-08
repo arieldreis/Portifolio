@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './Header.jsx'
+import Principal from './principal.jsx';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 {/* Essa pagina server para fazer ás rotas do nosso site. */}
@@ -7,9 +8,9 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route path='/' element={<Header/>} />
+        <Route path='/Home' element={<Principal/>}></Route>
       </Routes>
     </BrowserRouter>
   )
