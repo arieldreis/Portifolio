@@ -3,9 +3,18 @@
 @font-face {
   font-family: "Cossette Titre";
   src: url(assets/Archivo_Black,Big_Shoulders,Boldonse,Cal_Sans,Cossette_Titre,etc/Cal_Sans/CalSans-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: "Oswald";
+    src: url(assets/Archivo_Black,Big_Shoulders,Boldonse,Cal_Sans,Cossette_Titre,etc/Oswald/Oswald-VariableFont_wght.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 :root{
   --font: "Cossette Titre", "Arial", "Helvetica", sans-serif;
+  --font1: "Oswald", "Arial", "Helvetica", sans-serif;
   --cor1: #121212;
   --cor2: #0d0d0d;
   --cor3: #ffffff;
@@ -129,9 +138,61 @@ body{
 }
 
 /*Pagina com os conteúdos*/
-.container-main{
+.container-main {
     background-color: var(--cor8);
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 10px;
-    padding: 25px 15px;
+    padding: 25px 20px;
+    font-family: var(--font1);
+    max-width: 1100px; 
+}
+
+/* Título */
+.container-main h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Texto do sobre mim */
+.container-main > .aboutMe > p {
+    text-indent: 20px;
+    text-align: justify; 
+    line-height: 1.6;  
+}
+
+/* Linha com texto + imagem */
+.sameRow {
+    display: flex;
+    align-items: center;       
+    justify-content: space-between;
+    gap: 30px;                 
+}
+
+/* Imagem */
+.myImg {
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;  
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+    flex-shrink: 0;      /* impede a imagem de "espremer" */
+}
+
+/* Responsividade do Sobre Mim*/
+@media (max-width: 850px) {
+    .sameRow {
+        flex-direction: column;
+        text-align: center;  
+    }
+
+    .sameRow > .myImg {
+        margin-top: 20px;
+        width: 180px;
+        height: 180px;
+    }
+
+    .container-main > .aboutMe > p {
+        text-align: left;  
+        text-indent: 0;    
+    }
 }

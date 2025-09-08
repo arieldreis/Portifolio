@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './Header'
+import ArielImg from './assets/myImage.jfif'
 
 const principal = () => {
   return (
@@ -8,15 +9,14 @@ const principal = () => {
       <main className='container-main'>
         <section className='aboutMe'>
           <h1>Sobre Mim</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
+          <div className="sameRow">
+            <p>Olá, me chamo Ariel Marinho! Sou estudante do 2º ano do Ensino Médio Técnico em Desenvolvimento
+              de Sistemas na Escola Técnica Abdias do Nascimento. Tenho grande interesse em desenvolvimento de
+              software e estou sempre aprendendo novas tecnologias para evoluir como programador. Meu foco atual 
+              é em Java, JavaScript e Python, mas também gosto de explorar projetos que unam criatividade e inovação.
             </p>
+            <img src={ArielImg} alt="Imagem do Desenvolvedor Ariel Marinho" className='myImg'/>
+          </div>
         </section>
         <section className="projects">
           <h1>Projetos</h1>
