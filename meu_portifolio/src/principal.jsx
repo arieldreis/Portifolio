@@ -61,15 +61,18 @@ const principal = () => {
         </section>
         <section className="contact">
           <h1>Contato</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            </p>
+          <form action="https://formspree.io/f/meolnegz" method="post">
+            <label htmlFor="Nome">Nome</label>
+            <input type="text" name="nomeuser" id="nomeuser" />
+
+            <label htmlFor="Email">E-mail</label>
+            <input type="email" name="emailuser" id="emailuser" />
+
+            <label htmlFor="Mensagem">Mensagem</label>
+            <textarea name="msguser" id="msguser"></textarea>
+
+            <button type="submit">ENVIAR</button>
+          </form>
         </section>
       </main>
       <Footer/>

@@ -255,3 +255,77 @@ body{
     text-decoration: underline;
     color: var(--cor3);
 }
+/*Menu de Idiomas*/
+.select-language{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.select-language > select{
+    background-color: var(--cor2);
+    color: var(--cor3);
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+#direitosLicenca{
+    margin-top: -10px;
+}
+/*footer responsivo*/
+@media (max-width: 600px) {
+    .icones-github, .icones-linkedin, .icones-whatszapp, .icones-instagram {
+        font-size: 2em;
+    }
+    .container_responsivo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container_responsivo  > .select-language{
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+}
+/*Contato*/
+.contact h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input{
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: var(--font1);
+}
+textarea{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: var(--font1);
+}
+button {
+  padding: 10px;
+  background-color: #007bff;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-family: var(--font1);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
