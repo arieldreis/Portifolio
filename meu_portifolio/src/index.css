@@ -22,6 +22,9 @@
   --cor5: #878383;
   --cor6: #B0B0B0;
   --cor8: #1a1a1a;
+  --linkein: hsl(210, 90%, 40%);
+  --whatszapp: hsl(145, 71%, 44%);
+  --instagram:linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 *{
   margin: 0;
@@ -142,7 +145,7 @@ body{
     background-color: var(--cor8);
     margin: 20px auto;
     border-radius: 10px;
-    padding: 25px 20px;
+    padding: 35px 20px;
     font-family: var(--font1);
     max-width: 1100px; 
 }
@@ -210,4 +213,45 @@ body{
 }
 .skills-list > li::before{
     content: "➔";
+}
+
+/*Footer*/
+.footer-container{
+    background-color: var(--cor2);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 10px;
+}
+.icones-github{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.icones-linkedin{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: var(--linkein);
+}
+.icones-whatszapp{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: var(--whatszapp);
+}
+.icones-instagram{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.footer-container p{
+    margin-top: 10px;
+}
+.footer-container a{
+    text-decoration: none;
+    color: var(--cor3);
+}
+.footer-container a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
 }

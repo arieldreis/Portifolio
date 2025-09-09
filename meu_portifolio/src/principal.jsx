@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import ArielImg from './assets/myImage.jfif'
+import Footer from './footer.jsx'
 
 const principal = () => {
   return (
@@ -71,6 +72,7 @@ const principal = () => {
             </p>
         </section>
       </main>
+      <Footer/>
     </>
   )
 }
