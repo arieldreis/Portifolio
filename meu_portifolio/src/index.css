@@ -171,7 +171,9 @@ body{
     justify-content: space-between;
     gap: 30px;                 
 }
-
+.paragraphs p{
+    margin-bottom: 10px;
+}
 /* Imagem */
 .myImg {
     width: 220px;
@@ -226,23 +228,39 @@ body{
     font-size: 2.5em;
     margin-bottom: 10px;
     cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+.icones-github:hover{
+    transform: scale(1.1);
 }
 .icones-linkedin{
     font-size: 2.5em;
     margin-bottom: 10px;
     cursor: pointer;
     color: var(--linkein);
+    transition: 0.7s ease-in-out;
+}
+.icones-linkedin:hover{
+    transform: scale(1.1);
 }
 .icones-whatszapp{
     font-size: 2.5em;
     margin-bottom: 10px;
     cursor: pointer;
     color: var(--whatszapp);
+    transition: 0.7s ease-in-out;
+}
+.icones-whatszapp:hover{
+    transform: scale(1.1);
 }
 .icones-instagram{
     font-size: 2.5em;
     margin-bottom: 10px;
     cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+.icones-instagram:hover{
+    transform: scale(1.1);
 }
 .footer-container p{
     margin-top: 10px;
@@ -295,6 +313,13 @@ body{
   text-align: center;
   margin-bottom: 20px;
 }
+.contact{
+    background: #1e1e1e; /* fundo diferente do body */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-top: 30px;
+}
 form {
   max-width: 400px;
   margin: auto;
@@ -315,6 +340,12 @@ textarea{
     border: 1px solid #ccc;
     font-family: var(--font1);
 }
+
+input:focus, textarea:focus {
+  border: 2px solid #00aaff;
+  box-shadow: 0 0 5px #00aaff;
+}
+
 button {
   padding: 10px;
   background-color: #007bff;
@@ -324,8 +355,13 @@ button {
   cursor: pointer;
   transition: 0.3s ease-in-out;
   font-family: var(--font1);
+  margin-bottom: 30px;
 }
 
 button:hover {
   background-color: #0056b3;
+}
+/*Educação*/
+.education ul{
+    padding: 15px;
 }

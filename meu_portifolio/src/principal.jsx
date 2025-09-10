@@ -11,11 +11,24 @@ const principal = () => {
         <section className='aboutMe'>
           <h1>Sobre Mim</h1>
           <div className="sameRow">
-            <p>Olá, me chamo Ariel Marinho! Sou estudante do 2º ano do Ensino Médio Técnico em Desenvolvimento
-              de Sistemas na Escola Técnica Abdias do Nascimento. Tenho grande interesse em desenvolvimento de
-              software e estou sempre aprendendo novas tecnologias para evoluir como programador. Meu foco atual 
-              é em Java, JavaScript e Python, mas também gosto de explorar projetos que unam criatividade e inovação.
-            </p>
+            <div className="paragraphs">
+              <p>Olá, me chamo Ariel Marinho! Sou estudante do 2º ano do Ensino Médio Técnico em Desenvolvimento de
+                Sistemas na Escola Técnica Abdias do Nascimento. Tenho grande interesse em desenvolvimento de
+                software e estou sempre aprendendo novas tecnologias para evoluir como programador.
+              </p>
+              <p>Atualmente, meu foco é em Java, JavaScript e Python, mas também gosto de explorar projetos que unam
+                criatividade, inovação e impacto positivo. Já desenvolvi aplicações web, sites dinâmicos e sistemas voltados
+                para resolver problemas do dia a dia, sempre buscando escrever códigos organizados e de fácil
+                manutenção.
+              </p>
+              <p>Sou apaixonado por resolver desafios, aprender coisas novas e compartilhar conhecimento. Além disso,
+                tenho interesse em desenvolvimento mobile e em áreas como Inteligência Artificial e ciência de dados,
+                que me motivam a continuar estudando e expandindo minhas habilidades.
+              </p>
+              <p>Meu objetivo é me tornar desenvolvedor back-end e contribuir para projetos que realmente façam a
+                diferença, combinando tecnologia com soluções criativas.
+              </p>
+            </div>
             <img src={ArielImg} alt="Imagem do Desenvolvedor Ariel Marinho" className='myImg'/>
           </div>
         </section>
@@ -49,15 +62,32 @@ const principal = () => {
         </section>
         <section className="education">
           <h1>Experiência e Educação</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            </p>
+          <h2>Educação</h2>
+          <ul className="skills-list">
+            <li> Ensino Médio Técnico em Desenvolvimento de Sistemas – Escola Técnica Abdias do Nascimento (2024 – 2026)</li>
+            <li> Aprendizado em Java, JavaScript, Python, HTML, CSS e PHP.</li>
+            <li> Foco em desenvolvimento full-stack, programação orientada a objetos, banco de dados e projetos práticos.</li>
+            <li> Aprendizado com soluções de Inteligência Artificial no GitHub</li>
+          </ul>
+          <h2>Experiência em Projetos</h2>
+          <ul>
+            <li> Desenvolvimento Web Front-end</li>
+            <ul className='skills-list'>
+              <li> Criação de sites dinâmicos com HTML, CSS e JavaScript, incluindo um site de filmes para entretenimento.</li>
+              <li> Uso de design responsivo, personalização com CSS dinâmico e integração de elementos interativos.</li>
+            </ul>
+            <li> Projetos Acadêmicos e Pessoais</li>
+            <ul className='skills-list'>
+              <li> Desenvolvimento de sistemas em Java e Python, aplicando lógica de programação, funções, listas e POO.</li>
+              <li> Projetos em PHP com MySQL para CRUD e manipulação de dados.</li>
+              <li> Experiências com bibliotecas em Python, como Tkinter (interfaces gráficas) e PyAutoGUI (automação).</li>
+            </ul>
+            <li> Hackaton – Projeto Rotina Inteligente (2025)</li>
+            <ul className='skills-list'>
+              <li> Participação em hackaton com projeto focado em educação, economia de água e energia.</li>
+              <li> Trabalho em equipe com foco em inovação e impacto social.</li>
+            </ul>
+          </ul>
         </section>
         <section className="contact">
           <h1>Contato</h1>

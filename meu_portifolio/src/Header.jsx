@@ -16,6 +16,12 @@ const Header = () => {
 
         buttonMenu.style.transition = "0.5s";
     }
+    function contato(){
+        window.scrollTo({
+            bottom: 1000,
+            behavior: 'smooth'
+        })
+    }
   return (
     <header className='header'>
             <div className="container-header">
@@ -26,7 +32,7 @@ const Header = () => {
                         <li className='menu-mobile-link'><a href="#inicio">Início</a></li>
                         <li className='menu-mobile-link'><a href="#sobre">Sobre</a></li>
                         <li className='menu-mobile-link'><a href="#projetos">Projetos</a></li>
-                        <li className='menu-mobile-link'><a href="#contato">Contato</a></li>
+                        <li className='menu-mobile-link'><a href="#contato" onClick={contato}>Contato</a></li>
                     </ul>
                 </nav>
             </div>
