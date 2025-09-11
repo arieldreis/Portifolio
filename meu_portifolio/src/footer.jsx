@@ -2,7 +2,15 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
-const footer = () => {
+export default function Footer({ setLanguage }) {
+  const handleChange = (e) => {
+    const value = e.target.value;
+
+    if (value === "Portuguese") setLanguage("pt");
+    if (value === "Spanish") setLanguage("es");
+    if (value === "English") setLanguage("en");
+    if (value === "French") setLanguage("fr");
+  };
   return (
     <footer className='footer-container'>
         <FontAwesomeIcon icon={faGithub}  className='icones-github' onClick={() => {window.open("https://github.com/arieldreis", '_blank')}}/>
@@ -13,11 +21,11 @@ const footer = () => {
           <p>Email: <a href="mailto:arieldreis@gmail.com">arieldreis@gmail.com</a></p>
           <p>Brasil - São Paulo</p>
           <div className="select-language">
-            <select id="language-select">
-              <option value="Potuguese"> 🌐 Potuguese</option>
-              <option value="Spanish">🌐 Spanish</option>
+            <select id="language-select" onChange={handleChange}>
+              <option value="Portuguese"> 🌐 Portuguese</option>
+              <option value="Spanish"> 🌐 Spanish</option>
               <option value="English"> 🌐 English</option>
-              <option value="French"> 🌐 Frenche</option>
+              <option value="French"> 🌐 French</option>
             </select>
           </div>
           <p id='direitosLicenca'>&copy; 2025 Ariel Marinho - Todos os direitos reservados</p>
@@ -25,5 +33,3 @@ const footer = () => {
     </footer>
   )
 }
-
-export default footer

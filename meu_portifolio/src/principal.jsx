@@ -1,9 +1,41 @@
-import React from 'react'
 import Header from './Header'
 import ArielImg from './assets/myImage.jfif'
 import Footer from './footer.jsx'
+import FILMMIX from './assets/filmMix.png';
+import PGM from './assets/site_pgm.png';
+import disneyPlus from './assets/disneyphp.png';
+import spotifyReact from './assets/spotifyReact.png';
+import Py from './assets/automacaoPy.png';
+import ApiPy from './assets/ApiPy.png';
 
-const principal = () => {
+export default function principal() {
+  const translations = {
+    pt:{
+      aboutMe: "Olá, me chamo Ariel Marinho! Sou estudante do 2º ano do Ensino Médio Técnico em Desenvolvimento de Sistemas na Escola Técnica Abdias do Nascimento. Tenho grande interesse em desenvolvimento desoftware e estou sempre aprendendo novas tecnologias para evoluir como programador.",
+      skills: "Atualmente, meu foco é em Java, JavaScript e Python, mas também gosto de explorar projetos que unam criatividade, inovação e impacto positivo. Já desenvolvi aplicações web, sites dinâmicos e sistemas voltados para resolver problemas do dia a dia, sempre buscando escrever códigos organizados e de fácil manutenção.",
+      projects: "Sou apaixonado por resolver desafios, aprender coisas novas e compartilhar conhecimento. Além disso, tenho interesse em desenvolvimento mobile e em áreas como Inteligência Artificial e ciência de dados, que me motivam a continuar estudando e expandindo minhas habilidades.",
+      goals: "Meu objetivo é me tornar desenvolvedor back-end e contribuir para projetos que realmente façam a diferença, combinando tecnologia com soluções criativas."
+    },
+    en:{
+      aboutMe: "Hello, my name is Ariel Marinho! I am a second-year student in the Technical High School in Systems Development at the Abdias do Nascimento Technical School. I have a great interest in software development and am always learning new technologies to evolve as a programmer.",
+      skills: "Currently, my focus is on Java, JavaScript, and Python, but I also enjoy exploring projects that combine creativity, innovation, and positive impact. I have developed web applications, dynamic websites, and systems aimed at solving everyday problems, always striving to write organized and maintainable code.",
+      projects: "I am passionate about solving challenges, learning new things, and sharing knowledge. Additionally, I have an interest in mobile development and areas such as Artificial Intelligence and data science, which motivate me to continue studying and expanding my skills.",
+      goals: "My goal is to become a back-end developer and contribute to projects that truly make a difference, combining technology with creative solutions."
+    },
+    es:{
+      aboutMe: "¡Hola, me llamo Ariel Marinho! Soy estudiante de segundo año de la Escuela Técnica en Desarrollo de Sistemas en la Escuela Técnica Abdias do Nascimento. Tengo un gran interés en el desarrollo de software y siempre estoy aprendiendo nuevas tecnologías para evolucionar como programador.",
+      skills: "Actualmente, mi enfoque está en Java, JavaScript y Python, pero también disfruto explorando proyectos que combinan creatividad, innovación e impacto positivo. He desarrollado aplicaciones web, sitios web dinámicos y sistemas destinados a resolver problemas cotidianos, siempre esforzándome por escribir código organizado y mantenible.",
+      projects: "Me apasiona resolver desafíos, aprender cosas nuevas y compartir conocimientos. Además, tengo interés en el desarrollo móvil y en áreas como la Inteligencia Artificial y la ciencia de datos, que me motivan a seguir estudiando y ampliando mis habilidades.",
+      goals: "Mi objetivo es convertirme en desarrollador back-end y contribuir a proyectos que realmente marquen la diferencia, combinando tecnología con soluciones creativas."
+    },
+    fr:{
+      aboutMe: "Bonjour, je m'appelle Ariel Marinho! Je suis étudiant en deuxième année du lycée technique en développement de systèmes à l'école technique Abdias do Nascimento. J'ai un grand intérêt pour le développement de logiciels et j'apprends toujours de nouvelles technologies pour évoluer en tant que programmeur.",
+      skills: "Actuellement, je me concentre sur Java, JavaScript et Python, mais j'aime aussi explorer des projets qui allient créativité, innovation et impact positif. J'ai développé des applications web, des sites web dynamiques et des systèmes visant à résoudre les problèmes quotidiens, en m'efforçant toujours d'écrire un code organisé et maintenable.",
+      projects: "Je suis passionné par la résolution de défis, l'apprentissage de nouvelles choses et le partage des connaissances. De plus, je m'intéresse au développement mobile et à des domaines tels que l'intelligence artificielle et la science des données, qui me motivent à continuer à étudier et à élargir mes compétences.",
+      goals: "Mon objectif est de devenir développeur back-end et de contribuer à des projets qui font vraiment la différence, en combinant technologie et solutions créatives."
+    }
+  }
+
   return (
     <>
       <Header />
@@ -12,37 +44,68 @@ const principal = () => {
           <h1>Sobre Mim</h1>
           <div className="sameRow">
             <div className="paragraphs">
-              <p id=''>Olá, me chamo Ariel Marinho! Sou estudante do 2º ano do Ensino Médio Técnico em Desenvolvimento de
-                Sistemas na Escola Técnica Abdias do Nascimento. Tenho grande interesse em desenvolvimento de
-                software e estou sempre aprendendo novas tecnologias para evoluir como programador.
-              </p>
-              <p id=''>Atualmente, meu foco é em Java, JavaScript e Python, mas também gosto de explorar projetos que unam
-                criatividade, inovação e impacto positivo. Já desenvolvi aplicações web, sites dinâmicos e sistemas voltados
-                para resolver problemas do dia a dia, sempre buscando escrever códigos organizados e de fácil
-                manutenção.
-              </p>
-              <p id=''>Sou apaixonado por resolver desafios, aprender coisas novas e compartilhar conhecimento. Além disso,
-                tenho interesse em desenvolvimento mobile e em áreas como Inteligência Artificial e ciência de dados,
-                que me motivam a continuar estudando e expandindo minhas habilidades.
-              </p>
-              <p id=''>Meu objetivo é me tornar desenvolvedor back-end e contribuir para projetos que realmente façam a
-                diferença, combinando tecnologia com soluções criativas.
-              </p>
+              <p id='about-me'>{translations['pt'].aboutMe}</p>
+              <p id='skills'>{translations['pt'].skills}</p>
+              <p id='projects'>{translations['pt'].projects}</p>
+              <p id='goals'>{translations['pt'].goals}</p>
             </div>
             <img src={ArielImg} alt="Imagem do Desenvolvedor Ariel Marinho" className='myImg'/>
           </div>
         </section>
         <section className="projects">
           <h1>Projetos</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam veritatis beatae vitae maiores 
-            repellendus cupiditate, qui eum nostrum suscipit accusantium minus architecto possimus voluptas dolorem, unde distinctio voluptate facere earum?
-            </p>
+          <div className="projetos-container">
+            <div className="projeto">
+              <h3>Projeto 1: Site de Filmes</h3>
+              <p>A Filmmix é uma plataforma de streaming focada em filmes e séries, oferecendo um catálogo variado para diferentes públicos.</p>
+              <img src={FILMMIX} alt="Imagem de um site de filmes." />
+              <div className="links-projeto">
+                <a href="https://github.com/arieldreis/FILMMIX" target='_blank'>Repositório</a>
+                <a href="https://arieldreis.github.io/FILMMIX/filmmix/" target='_blank'>Ver Online</a>
+              </div>
+            </div>
+            <div className="projeto">
+              <h3>Projeto 2: Site da Primeira Guerra Mundial</h3>
+              <p>Um site educacional sobre a primeira guerra mundial, com o foco na crise dos bãlcas, guerras nas tricheiras, tratados de paz e mapas geopoliticos.</p>
+              <img src={PGM} alt="Imagem do site sobre a primeira guerra mundial" />
+              <div className="links-projeto">
+                <a href="https://github.com/arieldreis/primeira_guerra_mundial" target='_blank'>Repositório</a>
+                <a href="https://arieldreis.github.io/primeira_guerra_mundial/index.html" target='_blank'>Ver Online</a>
+              </div>
+            </div>
+            <div className="projeto">
+              <h3>Projeto 3: Site da Disney+</h3>
+              <p>Pagina da Disney+ usando PHP, com integração com banco de dados MySql.</p>
+              <img src={disneyPlus} alt="Imagem do site da disney+ com PHP" />
+              <div className="links-projeto">
+                <a href="https://github.com/arieldreis/PHP">Repositório</a>
+              </div>
+            </div>
+            <div className="projeto">
+              <h3>Projeto 4: Réplica do Spotify</h3>
+              <p>Aplicação desenvolvida em React com o foco de aprofunda os meus estudos em framework.</p>
+              <img src={spotifyReact} alt="Imagem do site da réplica do Spotify" />
+              <div className="links-projeto">
+                <a href="https://github.com/arieldreis/Spotify">Repositório</a>
+              </div>
+            </div>
+            <div className="projeto">
+              <h3>Projeto 5: Sistema de Automação</h3>
+              <p>Um sistema simples de Automação usando Python.</p>
+              <img src={Py} alt="Imagem de uma automação feita em Python." />
+              <div className="links-projeto">
+                <a href="https://github.com/arieldreis/Python">Repositório</a>
+              </div>
+            </div>
+            <div className="projeto">
+              <h3>Interface Gráfica em Python</h3>
+              <p>Desenvolvimento de interface gráfica em Python com WEB-API</p>
+              <img src={ApiPy} alt="Requisição de APIWEB com Python." />
+              <div className="links-projeto">
+                <a href="https://github.com/arieldreis/Python">Repositório</a>
+              </div>
+            </div>
+          </div>
         </section>
         <section className="skills">
           <h1>Habilidades e Tecnologias</h1>
@@ -109,5 +172,3 @@ const principal = () => {
     </>
   )
 }
-
-export default principal

@@ -277,7 +277,6 @@ body{
 .select-language{
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
 }
 .select-language > select{
     background-color: var(--cor2);
@@ -287,6 +286,7 @@ body{
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
+   margin-left: 10px;
 }
 #direitosLicenca{
     margin-top: -10px;
@@ -364,4 +364,66 @@ button:hover {
 /*Educação*/
 .education ul{
     padding: 15px;
+}
+
+/* Estilos da Seção de Projetos */
+#projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projeto {
+    background-color: #383636;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.projeto:hover {
+    transform: translateY(-10px);
+}
+
+.projeto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.projeto h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.links-projeto a {
+    background-color: #555;
+    color: var(--cor3);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.links-projeto a:hover {
+    background-color: #777;
+    text-decoration: underline;
+}
+.projetos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
