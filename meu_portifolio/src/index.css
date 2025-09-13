@@ -22,9 +22,25 @@
   --cor5: #878383;
   --cor6: #B0B0B0;
   --cor8: #1a1a1a;
+  --cor9: #808080;
+  --button: #007bff;
+  --contact: #1e1e1e;
+  --iconefundo: #1e1e1e;
+  --linkprojeto: #555;
+  --linkprojetohover: #777;
+  --projeto: #383636;
+  --inputs: #ccc;
   --linkein: hsl(210, 90%, 40%);
   --whatszapp: hsl(145, 71%, 44%);
-  --instagram:linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  --html5: #e34f26;
+    --css: #264de4;
+    --js: #f0db4f;
+    --php: #787cb5;
+    --python: #306998;
+    --java: #ff0000;
+    --react: #61dbfb;
+    --nodejs: #68a063;
+    --git: #f34f29;
 }
 *{
   margin: 0;
@@ -69,7 +85,7 @@ body{
     transition: all 0.3s ease-in-out;
 }
 .nav-list > li > a:hover{
-    background-color: gray;
+    background-color: var(--cor9);
     text-decoration: underline;
     padding: 10px;
     border-radius: 10px;
@@ -314,7 +330,7 @@ body{
   margin-bottom: 20px;
 }
 .contact{
-    background: #1e1e1e; /* fundo diferente do body */
+    background: var(--contact); /* fundo diferente do body */
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
@@ -331,13 +347,13 @@ form {
 input{
   padding: 8px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--inputs);
   font-family: var(--font1);
 }
 textarea{
     padding: 15px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--inputs);
     font-family: var(--font1);
 }
 
@@ -348,9 +364,9 @@ input:focus, textarea:focus {
 
 button {
   padding: 10px;
-  background-color: #007bff;
+  background-color: var(--button);
   border-radius: 5px;
-  color: white;
+  color: var(--cor3);
   border: none;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -375,7 +391,7 @@ button:hover {
 }
 
 .projeto {
-    background-color: #383636;
+    background-color: var(--projeto);
     padding: 20px;
     border-radius: 10px;
     max-width: 350px;
@@ -407,7 +423,7 @@ button:hover {
 }
 
 .links-projeto a {
-    background-color: #555;
+    background-color: var(--linkprojeto);
     color: var(--cor3);
     text-decoration: none;
     padding: 10px 15px;
@@ -417,7 +433,7 @@ button:hover {
 }
 
 .links-projeto a:hover {
-    background-color: #777;
+    background-color: var(--linkprojetohover);
     text-decoration: underline;
 }
 .projetos-container{
@@ -426,4 +442,60 @@ button:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+}
+/*Icones de Tecnologia*/
+.languageProgramming{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.icon{
+    background-color: var(--iconefundo);
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 3em;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.icon:hover{
+    background-color: var(--cor5);
+    transform: scale(1.1);
+    transition: transform 0.8s ease;
+}
+.icon img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+#html5{
+    color: var(--html5);
+}
+#css{
+    color: var(--css);
+}
+#js{
+    color: var(--js);
+}
+#php{
+    color: var(--php);
+}
+#python{
+    color: var(--python);
+}
+#java{
+    color: var(--java);
+}
+#react{
+    color: var(--react);
+}
+#nodejs{
+    color: var(--nodejs);
+}
+#git{
+    color: var(--git);
 }

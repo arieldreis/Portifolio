@@ -7,6 +7,14 @@ import disneyPlus from './assets/disneyphp.png';
 import spotifyReact from './assets/spotifyReact.png';
 import Py from './assets/automacaoPy.png';
 import ApiPy from './assets/ApiPy.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faHtml5, faCss3Alt, faJs, faPhp, faPython, faReact, faJava, faNodeJs, faGitAlt, faGithub} from '@fortawesome/free-brands-svg-icons';
+// Importar as img's
+import VsCode from './assets/vs_code.png'
+import pycharm from './assets/PyCharm_Icon.svg.png';
+import intellij from './assets/IntelliJ_IDEA_Icon.svg.png';
+import mongodb from './assets/mongodb_thumbnail.png';
+import mysql from './assets/mysql_PNG29.png';
 
 export default function principal() {
   const translations = {
@@ -109,13 +117,66 @@ export default function principal() {
         </section>
         <section className="skills">
           <h1>Habilidades e Tecnologias</h1>
-          <ul className='skills-list'>
-            <li> Desenvolvimento web front-end: HTML, CSS, JavaScript e React </li>
-            <li> Back-end e lógica de programação: Java, Python e NodeJs</li>
-            <li> Versionamento de código: Git e GitHub (controle de versões e colaboração em projetos)</li>
-            <li> Banco de dados: MySql (gerenciamento e consultas)</li>
-            <li> Experiência prática em integração de sistemas e desenvolvimento de projetos pessoais</li>
-          </ul>
+          <h2>Linguagens de Programação</h2>
+          <div className="languageProgramming">
+            <div className='icon'>
+              <FontAwesomeIcon icon={faHtml5} id='html5'/>
+            </div>
+            <div className="icon">
+              <FontAwesomeIcon icon={faCss3Alt} id='css'/>
+            </div>
+            <div className="icon">
+              <FontAwesomeIcon icon={faJs} id='js'/>
+            </div>
+            <div className="icon">
+              <FontAwesomeIcon icon={faPhp} id='php'/>
+            </div>
+            <div className="icon">
+              <FontAwesomeIcon icon={faPython} id='python'/>
+            </div>
+            <div className="icon">
+              <FontAwesomeIcon icon={faJava} id='java'/>
+            </div>
+          </div>
+          <h2>Frameworks e Bibliotecas</h2>
+          <div className='languageProgramming'>
+            <div className='icon'>
+              <FontAwesomeIcon icon={faReact} id='react'/>
+            </div>
+            <div className="icon">
+              <FontAwesomeIcon icon={faNodeJs} id='nodejs'/>
+            </div>
+          </div>
+          <h2>Ferramentas,Tecnologias e ambientes</h2>
+          <div className="languageProgramming">
+            <div className="icon">
+              <FontAwesomeIcon icon={faGitAlt} id='git'/>
+            </div>
+            <div className="icon">
+              <FontAwesomeIcon icon={faGithub} />
+            </div>
+            <div className="icon">
+              <img src={VsCode} alt="Imagem do Visual Studio Code" />
+            </div>
+            <div className="icon">
+              <img src={pycharm} alt="Imagem do Pycharm" />
+            </div>
+            <div className="icon">
+              <img src={intellij} alt="Imagem do Itellij IDEA" />
+            </div>
+          </div>
+          <h2>Banco de Dados</h2>
+          <div className="languageProgramming">
+            <div className="icon">
+              <img src={mysql} alt="Imagem do MySql" />
+            </div>
+            <div className="icon">
+              <img src={mongodb} alt="Imagem do MongoDB" />
+            </div>
+            <div className="icon">
+              <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg`} alt="Imagem do SqlServer" />
+            </div>
+          </div>
           <h2>Idiomas</h2>
           <ul className="skills-list">
             <li> Inglês: Intermediário-Avançado</li>
