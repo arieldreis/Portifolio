@@ -48,7 +48,7 @@ export default function principal() {
     <>
       <Header />
       <main className='container-main'>
-        <section className='aboutMe'>
+        <section className='aboutMe' id='aboutme'>
           <h1>Sobre Mim</h1>
           <div className="sameRow">
             <div className="paragraphs">
@@ -60,7 +60,7 @@ export default function principal() {
             <img src={ArielImg} alt="Imagem do Desenvolvedor Ariel Marinho" className='myImg'/>
           </div>
         </section>
-        <section className="projects">
+        <section className="projects" id='project'>
           <h1>Projetos</h1>
           <div className="projetos-container">
             <div className="projeto">
@@ -115,7 +115,7 @@ export default function principal() {
             </div>
           </div>
         </section>
-        <section className="skills">
+        <section className="skills" id='tecnologias'>
           <h1>Habilidades e Tecnologias</h1>
           <h2>Linguagens de Programação</h2>
           <div className="languageProgramming">
@@ -177,21 +177,21 @@ export default function principal() {
               <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg`} alt="Imagem do SqlServer" />
             </div>
           </div>
+        </section>
+        <section className="education" id='education'>
+          <h1>Experiência e Educação</h1>
+          <h2>Educação</h2>
+          <ul className="skills-list">
+            <li> Ensino Médio Técnico em Desenvolvimento de Sistemas na Escola Técnica Abdias do Nascimento (2024 – 2026)</li>
+            <li> Aprendizado em Java, JavaScript, Python, HTML, CSS e PHP.</li>
+            <li> Foco em desenvolvimento full-stack, programação orientada a objetos, banco de dados e projetos práticos.</li>
+            <li> Aprendizado com soluções de Inteligência Artificial no GitHub</li>
+          </ul>
           <h2>Idiomas</h2>
           <ul className="skills-list">
             <li> Inglês: Intermediário-Avançado</li>
             <li> Francês: Básico</li>
             <li> Espanhol: Básico</li>
-          </ul>
-        </section>
-        <section className="education">
-          <h1>Experiência e Educação</h1>
-          <h2>Educação</h2>
-          <ul className="skills-list">
-            <li> Ensino Médio Técnico em Desenvolvimento de Sistemas – Escola Técnica Abdias do Nascimento (2024 – 2026)</li>
-            <li> Aprendizado em Java, JavaScript, Python, HTML, CSS e PHP.</li>
-            <li> Foco em desenvolvimento full-stack, programação orientada a objetos, banco de dados e projetos práticos.</li>
-            <li> Aprendizado com soluções de Inteligência Artificial no GitHub</li>
           </ul>
           <h2>Experiência em Projetos</h2>
           <ul>

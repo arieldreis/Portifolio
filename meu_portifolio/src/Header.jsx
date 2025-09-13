@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-scroll';
 
 const Header = () => {
     function clicar_menu() {
@@ -16,12 +17,6 @@ const Header = () => {
 
         buttonMenu.style.transition = "0.5s";
     }
-    function contato(){
-        window.scrollTo({
-            bottom: 1000,
-            behavior: 'smooth'
-        })
-    }
   return (
     <header className='header'>
             <div className="container-header">
@@ -29,10 +24,12 @@ const Header = () => {
                 <nav>
                     <FontAwesomeIcon icon={faBars} onClick={clicar_menu} className='button-nav' id='button'/>
                     <ul className='nav-list'>
-                        <li className='menu-mobile-link'><a href="#inicio">Início</a></li>
-                        <li className='menu-mobile-link'><a href="#sobre">Sobre</a></li>
-                        <li className='menu-mobile-link'><a href="#projetos">Projetos</a></li>
-                        <li className='menu-mobile-link'><a href="#contato" onClick={contato}>Contato</a></li>
+                        <li className='menu-mobile-link'><Link to='inicio' smooth={true} duration={800}>Início</Link></li>
+                        <li className='menu-mobile-link'><Link to='aboutme' smooth={true} duration={800}>Sobre</Link></li>
+                        <li className='menu-mobile-link'><Link to='project' smooth={true} duration={800}>Projetos</Link></li>
+                        <li className="menu-mobile-link"><Link to='tecnologias' smooth={true} duration={800}>Tecnologias</Link></li>
+                        <li className="menu-mobile-link"><Link to='education' smooth={true} duration={800}>Educação</Link></li>
+                        <li className='menu-mobile-link'><Link to='contact' smooth={true} duration={800}>Contato</Link></li>
                     </ul>
                 </nav>
             </div>

@@ -114,7 +114,7 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 870px) {
     .container-header {
         display: flex;
         flex-direction: column;
