@@ -2,13 +2,13 @@
 /*IMPORTANDO ÁS FONTES*/
 @font-face {
   font-family: "Cossette Titre";
-  src: url(assets/Archivo_Black,Big_Shoulders,Boldonse,Cal_Sans,Cossette_Titre,etc/Cal_Sans/CalSans-Regular.ttf) format("truetype");
+  src: url(assets/fontes/Cal_Sans/CalSans-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
     font-family: "Oswald";
-    src: url(assets/Archivo_Black,Big_Shoulders,Boldonse,Cal_Sans,Cossette_Titre,etc/Oswald/Oswald-VariableFont_wght.ttf) format("truetype");
+    src: url(assets/fontes/Oswald/Oswald-VariableFont_wght.ttf) format("truetype");
     font-weight: normal;
     font-style: normal;
 }
