@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "vercel": {
-    "buildCommand": "vite",
+    "buildCommand": "vite build",
     "outputDirectory": "dist",
     "devCommand": "vite",
     "cleanUrls": true
