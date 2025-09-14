@@ -32,7 +32,7 @@ Se você quiser rodar este projeto na sua máquina, siga os passos abaixo:
     ```
 2.  Navegue até o diretório do projeto:
     ```bash
-    cd portifolio
+    cd Portifolio
     ```
 3. Instale ás dependências do React.js
    ```bash
