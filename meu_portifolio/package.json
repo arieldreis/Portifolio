@@ -9,12 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "vercel": {
-    "buildCommand": "vite build",
-    "outputDirectory": "dist",
-    "devCommand": "vite",
-    "cleanUrls": true
-  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.0.1",
     "@fortawesome/free-brands-svg-icons": "^7.0.1",
