@@ -86,7 +86,7 @@ export default function principal() {
               <p>Pagina da Disney+ usando PHP, com integração com banco de dados MySql.</p>
               <img src={disneyPlus} alt="Imagem do site da disney+ com PHP" />
               <div className="links-projeto">
-                <a href="https://github.com/arieldreis/PHP">Repositório</a>
+                <a href="https://github.com/arieldreis/PHP/tree/main/disneyPlus">Repositório</a>
               </div>
             </div>
             <div className="projeto">
@@ -95,6 +95,7 @@ export default function principal() {
               <img src={spotifyReact} alt="Imagem do site da réplica do Spotify" />
               <div className="links-projeto">
                 <a href="https://github.com/arieldreis/Spotify">Repositório</a>
+                <a href="https://spotifyypremium.netlify.app/">Ver Online</a>
               </div>
             </div>
             <div className="projeto">
@@ -102,7 +103,7 @@ export default function principal() {
               <p>Um sistema simples de Automação usando Python.</p>
               <img src={Py} alt="Imagem de uma automação feita em Python." />
               <div className="links-projeto">
-                <a href="https://github.com/arieldreis/Python">Repositório</a>
+                <a href="https://github.com/arieldreis/Python/blob/main/HashTag/aula01.py">Repositório</a>
               </div>
             </div>
             <div className="projeto">
@@ -110,7 +111,7 @@ export default function principal() {
               <p>Desenvolvimento de interface gráfica em Python com WEB-API</p>
               <img src={ApiPy} alt="Requisição de APIWEB com Python." />
               <div className="links-projeto">
-                <a href="https://github.com/arieldreis/Python">Repositório</a>
+                <a href="https://github.com/arieldreis/Python/blob/main/modulos/motivacao.py">Repositório</a>
               </div>
             </div>
           </div>
@@ -147,7 +148,7 @@ export default function principal() {
               <FontAwesomeIcon icon={faNodeJs} id='nodejs'/>
             </div>
           </div>
-          <h2>Ferramentas,Tecnologias e ambientes</h2>
+          <h2>Ferramentas, Tecnologias e ambientes</h2>
           <div className="languageProgramming">
             <div className="icon">
               <FontAwesomeIcon icon={faGitAlt} id='git'/>
